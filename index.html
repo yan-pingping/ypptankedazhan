@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -980,6 +981,9 @@
                 };
             }
         };
+
+        // 将 UI 对象暴露给全局 window，以便动态生成的 HTML 中的 onclick 可以访问
+        window.UI = UI;
 
         const Input = {
             keys: {}, mouse: new THREE.Vector2(), mouseWorldPos: new THREE.Vector3(),
